@@ -3,7 +3,7 @@ $(function () {
         {
             skin: 'round',
             values: [
-              1,3,6,9,12
+              '1 month','3 month','6 month','9 month','12 month'
           ],
             from: 1,
             grid: true,

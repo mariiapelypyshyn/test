@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cormorant+Garamond:wght@300;400;500&family=Goldman:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -27,24 +28,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <div class="header_container">
-          <img class="logotype" src="./images/image 1.png" alt="logotype" />
-          <button class="mobile-menu-open-btn">
-            <svg
-              class="burger_menu_btn"
-              width="29.56"
-              height="16.12"
-              stroke="black"
-            >
-              <use href="./images/sprite.svg#burger-menu-icon"></use>
-            </svg>
-          </button>
-        </div>
+        <nav class="nav_header">
+          <div class="header_container">
+            <img
+              class="logotype"
+              src="./images/mobile/image 1.png"
+              alt="logotype"
+            />
+            <button class="mobile-menu-open-btn">
+              <svg
+                class="burger_menu_btn"
+                width="29.56"
+                height="16.12"
+                stroke="black"
+              >
+                <use href="./images/sprite.svg#burger-menu-icon"></use>
+              </svg>
+            </button>
+            <ul class="nav_link_list">
+              <li class="nav_link_item">
+                <a class="nav_link" href="">Informazioni</a>
+              </li>
+              <li class="nav_link_item"><a class="nav_link" href="">CEO</a></li>
+              <li class="nav_link_item">
+                <a class="nav_link" href="">Iniziare a guadagnare subito</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
@@ -56,12 +76,9 @@
             Con il Gruppo Generali potete fare <br />
             ancora di più!
           </p>
-        </section>
-        <section class="third">
-          <img src="./images/Rectangle 8.png" alt="Rectangle" />
-        </section>
-        <section class="form_section">
-          <form class="form_container">
+          <div class="second_computer_container">
+            <img class="second_computer_img" src="./images/computer/second_section.png" alt="logo image" />
+             <form class="form_container_computer">
             <input
               class="form_section_input"
               type="text"
@@ -104,72 +121,134 @@
             <div>
               <button class="form_btn" type="submit">REGISTRATI</button>
             </div>
+          </div>
+        </section>
+        <section class="third">
+          <img src="./images/mobile/Rectangle 8.png " alt="Rectangle" />
+        </section>
+        <section class="form_section">
+          <form class="form_container">
+            <input
+              class="form_section_input"
+              type="text"
+              name="il suo nome"
+              placeholder="IL SUO NOME"
+              required
+              minlength="2"
+              maxlength="15"
+              title="Please enter your user name."
+            />
+            <input
+              class="form_section_input"
+              type="text"
+              name="il suo cog"
+              placeholder="IL SUO COG"
+              required
+              minlength="2"
+              maxlength="15"
+              title="Please enter your last name"
+            />
+            <input
+              class="form_section_input"
+              type="email"
+              name="email"
+              placeholder="E-MAIL"
+              required
+              minlength="10"
+              pattern="^\\S+@\\S+\\.\\S+$"
+              title="example@mail.com"
+            />
+            <input
+              class="form_section_input last_input"
+              id="number"
+              type="tel"
+              name="number"
+              required
+              min="8"
+              title="Please enter your phone number"
+            />
+            <div>
+              <button class="form_btn" type="submit">REGISTRATI</button>
+            </div>
           </form>
         </section>
         <section class="fifth">
+          <img class="fifth_section_img" src="./images/computer/third_section.png" alt="photo">
+          <div class="fifth_section_text_container">
           <p class="fifth_section_description">IL NOSTRO SCOPO</p>
           <p class="fifth_section_text">
             Siamo qui per promuovere lo sviluppo e la circolazione delle
             persone, delle imprese e del Paese.
           </p>
+          </div>
         </section>
         <section class="sixth">
           <h2 class="sixth_section_title">Inizia a servire con noi</h2>
-          <div>
+          <div class="sixth_section_container">
+          <div class="sixth_section_container_item">
+            <div class="sixth_section_container_item_border"></div>
             <svg class="sixth_section_icon" width="95" height="95">
               <use href="./images/sprite.svg#icon_6_1"></use>
             </svg>
-            <p class="sixth_section_description">Registrazione</p>
-            <p class="sixth_section_text">
+            <p class="sixth_section_description sixth_section_description_first">Registrazione</p>
+            <p class="sixth_section_text sixth_section_text_first">
               Compilare tutti i campi del modulo di registrazione sul sito web.
             </p>
             <button class="sixth_section_btn">INIZIARE</button>
           </div>
-          <div>
+          <div class="sixth_section_container_item">
+            <div class="sixth_section_container_item_border"></div>
             <svg class="sixth_section_icon_second" width="95" height="95">
               <use href="./images/sprite.svg#icon_6_2"></use>
             </svg>
             <p class="sixth_section_description">Consultazione di esperti</p>
-            <p class="sixth_section_text">
-              Dopo la registrazione, rispondere <br />
-              all'invito del Consulente di supporto di Petrol Energia e <br />
+            <p class="sixth_section_text sixth_section_text_second">
+              Dopo la registrazione, rispondere 
+              all'invito del Consulente di supporto di Petrol Energia e 
               seguire tutte le sue istruzioni.
             </p>
-            <button class="sixth_section_btn">INIZIARE</button>
+            <button class="sixth_section_btn sixth_section_btn">INIZIARE</button>
           </div>
           <div>
             <svg class="sixth_section_icon_third" width="95" height="95">
               <use href="./images/sprite.svg#icon_6_3"></use>
             </svg>
             <p class="sixth_section_description">Deposito</p>
-            <p class="sixth_section_text">
+            <p class="sixth_section_text sixth_section_text_third">
               Dopo la verifica, è necessario <br />
               depositare un minimo di 250 euro sul <br />
               conto dell'azionista.
             </p>
             <button class="sixth_section_btn last_btn">INIZIARE</button>
           </div>
+          </div>
         </section>
 
         <section class="seventh">
+          <div class="seventh_section_mobile">
           <img
             class="rectangle71"
-            src="./images/Rectangle 7_1.png"
+            src="./images/mobile/Rectangle 7_1.png"
             alt="background image"
           />
           <img
             class="rectangle7"
-            src="./images/Rectangle 7.png"
+            src="./images/mobile/Rectangle 7.png"
             alt="background image"
           />
           <img
             class="seventh_section_img"
-            src="./images/seventh_section_img.png"
+            src="./images/mobile/seventh_section_img.png"
             alt="man with a microphone"
           />
-
+</div>
+<div class="seventh_section_computer">
+  <img class="seventh_section_computer_second" src="./images/computer/fifth_section2.png" alt="background image">
+  <img class="seventh_section_computer_first" src="./images/computer/fifth_section1.png" alt="man with a microphone">
+  
+</div>
           <div class="seventh_text">
-            <p>
+            <p class="seventh_text_computer">
               Philippe Donnet, amministratore delegato di Generali, ha appena
               festeggiato dieci anni in Italia e in un’intervista a “Repubblica”
               spiega che bilancio trae dal nostro Paese: “In questi dieci anni
@@ -193,14 +272,16 @@
               riduciamo le norme e liberiamo le energie imprenditoriali”.
             </p>
           </div>
+        
           <div class="seven_section_last_container">
             <h4 class="seventh_section_title">Potencijal dobiti</h4>
+           <div class="seven_section_last_container_computer">
             <div class="seventh_section_last_img">
               <input type="text" id="month" name="month" value="" />
               <input type="text" id="currency" name="currency" value="" />
               <button class="seventh_section_btn" type="button">
-                <span class="btn_text_first">MOGUĆA DOBIT:</span
-                ><span class="btn_text_second">€ 8600</span>
+                <div class="btn_text_first">MOGUĆA DOBIT:</div
+                ><div class="btn_text_second">€ 8600</div>
               </button>
             </div>
             <div class="seventh_section_text_container">
@@ -209,36 +290,65 @@
               <p class="seventh_section_description">AKTIVNI KORISNICI:</p>
               <p class="seventh_section_dscr">77 335</p>
             </div>
-          </div>
+            </div>
         </section>
 
         <section class="eigth">
-          <img src="./images/Section.png" alt="" />
+          <!-- <img class="eigth_section_mobile_img" src="./images/mobile/Section.png" alt="slider" /> -->
+<img class="eigth_section_computer_img" src="./images/computer/slider_section.png" alt="background image">
+<div class="swiper">
+  <ul class="eigth_section_computer_img_container swiper-wrapper">
+  <li class="eigth_section_computer_img_item swiper-slide">
+  <img src="./images/computer/Background+Shadow.png" alt="feedback card">
+  </li>
+  <li class="eigth_section_computer_img_item swiper-slide">
+    <img src="./images/computer/Background+Shadow (1).png" alt="feedback card">
+  </li>
+  <li class="eigth_section_computer_img_item swiper-slide"><img src="./images/computer/Background+Shadow (2).png" alt="feedback card"></li>
+  <li class="eigth_section_computer_img_item swiper-slide"><img src="./images/computer/Background+Shadow (3).png" alt="feedback card"></li>
+  <li class="eigth_section_computer_img_item swiper-slide"><img src="./images/computer/Background+Shadow (4).png" alt="feedback card"></li>
+</ul>
+</div>
+
         </section>
         <section class="last_section">
           <p class="last_section_description">Gli azionisti dell'azienda</p>
           <img
             class="last_section_img"
-            src="./images/last_section_img.png"
-            alt=""
+            src="./images/mobile/last_section_img.png"
+            alt="company logos"
+          />
+           <img
+            class="last_section_img_computer"
+            src="./images/computer/last_section.png"
+            alt="company logos"
           />
         </section>
       </div>
     </main>
     <footer class="container">
       <section class="footer">
+          <img
+          class="footer_logo_computer"
+          src="./images/mobile/image 1.png"
+          alt="logotype"
+        />
         <div class="footer_text">
+          <a href="#">Mappa del sito</a>
           <a href="#">Termini di utilizzo</a>
           <a href="#">Avviso di accessibilità</a>
           <a href="#">Gestione dei Cookie</a>
-          <a href="#">Mappa del sito</a>
           <a href="#"
             >Politica sulla protezione dei dati e informativa sulla privacy</a
           >
           <a href="#">Avviso di frode Web e phishing</a>
           <a href="#">Politica sui reclami – Australia</a>
         </div>
-        <img class="footer_logo" src="./images/image 1.png" alt="logotype" />
+        <img
+          class="footer_logo"
+          src="./images/mobile/image 1.png"
+          alt="logotype"
+        />
       </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
@@ -246,5 +356,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="./JS/range.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./JS/swiper.js"></script>
   </body>
 </html>
